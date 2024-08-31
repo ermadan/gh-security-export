@@ -96,7 +96,6 @@ fun publish(advisories: Array<GitHubAdvisory>): Boolean {
 }
 
 private val json = Json { ignoreUnknownKeys = true; coerceInputValues = true }
-private val token = "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"
 
 fun extract(since: Date, processor: (Array<GitHubAdvisory>) -> Boolean) {
     val client = OkHttpClient();
